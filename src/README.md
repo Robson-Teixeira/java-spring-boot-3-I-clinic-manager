@@ -7,8 +7,13 @@ This project was generated with [Spring Initializr](https://start.spring.io/) ve
 - Spring Boot DevTools
 - Lombok
 - Spring Web
+- Validation
+- MySQL Driver
+- Spring Data JPA
+- Flyway Migration
 
 ## Tools
 
 - [IntelliJ IDEA](https://www.jetbrains.com/pt-br/idea/);
-- [Insomnia](https://app.insomnia.rest/).
+- [Insomnia](https://app.insomnia.rest/);
+- [MySQL](https://www.mysql.com/downloads/).
