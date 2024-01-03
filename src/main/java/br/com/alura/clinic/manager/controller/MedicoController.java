@@ -3,6 +3,7 @@ package br.com.alura.clinic.manager.controller;
 import br.com.alura.clinic.manager.medico.DadosCadastroMedico;
 import br.com.alura.clinic.manager.medico.Medico;
 import br.com.alura.clinic.manager.medico.MedicoRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -17,6 +18,7 @@ public class MedicoController {
 	private MedicoRepository medicoRepository;
 
 	@PostMapping
+	@Transactional // Transação ativa com banco de dados
 	public void cadastrar(@RequestBody DadosCadastroMedico dadosCadastroMedico) {
 		medicoRepository.save(new Medico(dadosCadastroMedico));
 	}
