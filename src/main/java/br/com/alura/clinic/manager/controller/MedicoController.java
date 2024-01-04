@@ -26,6 +26,8 @@ public class MedicoController {
 
 	@GetMapping
 	public Page<DadosListagemMedico> listar(Pageable pageable) {
+		// Para sobrescrever o padrão da paginação, pode-se decorar o tipo do parâmetro com
+		// @PageableDefault, definindo as propriedades desejadas (page, size, sort...)
 		return medicoRepository.findAll(pageable).map(DadosListagemMedico::new);
 	}
 
