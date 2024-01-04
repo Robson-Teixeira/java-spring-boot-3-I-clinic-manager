@@ -1,9 +1,6 @@
 package br.com.alura.clinic.manager.controller;
 
-import br.com.alura.clinic.manager.medico.DadosCadastroMedico;
-import br.com.alura.clinic.manager.medico.DadosListagemMedico;
-import br.com.alura.clinic.manager.medico.Medico;
-import br.com.alura.clinic.manager.medico.MedicoRepository;
+import br.com.alura.clinic.manager.medico.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,8 +30,9 @@ public class MedicoController {
 
 	@PutMapping
 	@Transactional
-	public void atualizar(@RequestBody @Valid Object dados) {
-
+	public void atualizar(@RequestBody @Valid DadosAtualizacaoMedico dadosAtualizacaoMedico) {
+		var medico = medicoRepository.getReferenceById(dadosAtualizacaoMedico.id());
+		medico.atualizar(dadosAtualizacaoMedico);
 	}
 
 }
