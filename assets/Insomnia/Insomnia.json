@@ -1,9 +1,54 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2024-01-04T03:53:56.987Z",
+  "__export_date": "2024-01-04T14:08:59.463Z",
   "__export_source": "insomnia.desktop.app:v8.5.1",
   "resources": [
+    {
+      "_id": "req_44d7cdeaf5554d1296330d5b93d091b3",
+      "parentId": "wrk_45a2e476428a45718f6faeaf749c054b",
+      "modified": 1704377094179,
+      "created": 1704376952134,
+      "url": "http://localhost:8080/medicos",
+      "name": "Atualização de Médico",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 1,\n\t\"telefone\": \"31999881100\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.5.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704376952134,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_45a2e476428a45718f6faeaf749c054b",
+      "parentId": null,
+      "modified": 1704231583331,
+      "created": 1704231583331,
+      "name": "java-spring-boot-3-I-clinic-manager - API Voll.med",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
     {
       "_id": "req_176aa8dd924f4a1682745afe2a23f937",
       "parentId": "wrk_45a2e476428a45718f6faeaf749c054b",
@@ -31,16 +76,6 @@
       "settingRebuildPath": true,
       "settingFollowRedirects": "global",
       "_type": "request"
-    },
-    {
-      "_id": "wrk_45a2e476428a45718f6faeaf749c054b",
-      "parentId": null,
-      "modified": 1704231583331,
-      "created": 1704231583331,
-      "name": "java-spring-boot-3-I-clinic-manager - API Voll.med",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
     },
     {
       "_id": "req_d0e87b1ccd0d4232af384275102c75c8",

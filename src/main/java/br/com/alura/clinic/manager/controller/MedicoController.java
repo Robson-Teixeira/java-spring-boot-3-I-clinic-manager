@@ -31,4 +31,10 @@ public class MedicoController {
 		return medicoRepository.findAll(pageable).map(DadosListagemMedico::new);
 	}
 
+	@PutMapping
+	@Transactional
+	public void atualizar(@RequestBody @Valid Object dados) {
+
+	}
+
 }
