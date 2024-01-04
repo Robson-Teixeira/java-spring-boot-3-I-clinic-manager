@@ -25,7 +25,7 @@ public class MedicoController {
 	public Page<DadosListagemMedico> listar(Pageable pageable) {
 		// Para sobrescrever o padrão da paginação, pode-se decorar o tipo do parâmetro com
 		// @PageableDefault, definindo as propriedades desejadas (page, size, sort...)
-		return medicoRepository.findAll(pageable).map(DadosListagemMedico::new);
+		return medicoRepository.findAllByAtivoTrue(pageable).map(DadosListagemMedico::new);
 	}
 
 	@PutMapping
@@ -38,7 +38,8 @@ public class MedicoController {
 	@DeleteMapping("/{id}")
 	@Transactional
 	public void excluir(@PathVariable Long id) {
-		medicoRepository.deleteById(id);
+		var medico = medicoRepository.getReferenceById(id);
+		medico.excluir();
 	}
 
 }

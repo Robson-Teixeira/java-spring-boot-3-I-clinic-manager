@@ -1,15 +1,15 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2024-01-04T18:27:36.409Z",
+  "__export_date": "2024-01-04T18:42:20.756Z",
   "__export_source": "insomnia.desktop.app:v8.5.1",
   "resources": [
     {
       "_id": "req_45177c16759a43329ad50da128f7dfcc",
       "parentId": "wrk_45a2e476428a45718f6faeaf749c054b",
-      "modified": 1704392441761,
+      "modified": 1704393549761,
       "created": 1704392316349,
-      "url": "http://localhost:8080/medicos/3",
+      "url": "http://localhost:8080/medicos/1",
       "name": "Exclusão de Médico",
       "description": "",
       "method": "DELETE",
