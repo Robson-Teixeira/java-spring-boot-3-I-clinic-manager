@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2024-01-04T03:36:18.431Z",
+  "__export_date": "2024-01-04T03:53:56.987Z",
   "__export_source": "insomnia.desktop.app:v8.5.1",
   "resources": [
     {
@@ -41,6 +41,34 @@
       "description": "",
       "scope": "collection",
       "_type": "workspace"
+    },
+    {
+      "_id": "req_d0e87b1ccd0d4232af384275102c75c8",
+      "parentId": "wrk_45a2e476428a45718f6faeaf749c054b",
+      "modified": 1704340342537,
+      "created": 1704340333211,
+      "url": "http://localhost:8080/pacientes?sort=nome,desc",
+      "name": "Listagem de Pacientes",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.5.1"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1704283957692.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
     },
     {
       "_id": "req_c0753f7bdb9f436eae677cccb12ad44d",
