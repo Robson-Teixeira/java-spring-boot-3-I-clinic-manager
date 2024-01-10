@@ -1,6 +1,6 @@
 package br.com.alura.clinic.manager.medico;
 
-public enum Especilidade {
+public enum Especialidade {
 
 	Ortopedia,
 	Cardiologia,
